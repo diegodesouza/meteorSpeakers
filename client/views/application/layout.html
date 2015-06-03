@@ -1,0 +1,12 @@
+<body>
+  {{>loginButtons}}
+  {{renderPage}}
+</body>
+
+<template name='layout'>
+  <ul>
+    <li><a href="{{pathFor 'home'}}">Home</a></li>
+    <li><a href="{{pathFor 'speakers'}}">Speakers</a></li>
+  </ul>
+  {{> yield}}
+</template>

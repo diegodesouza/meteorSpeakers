@@ -1,0 +1,18 @@
+<template name="speakers">
+  <h1>Speakers</h1>
+
+  {{#if editingDoc}}
+    {{> quickForm collection="Speakers" doc=editingDoc id="updateSpeakersForm" type="update"}}
+  {{else}}
+    {{> quickForm collection="Speakers" id="insertSpeakersForm" type="insert"}}
+  {{/if}}
+
+  <ul>
+    {{#each speakers}}
+    <li><a>{{name}}</a></li>
+    {{/each}}
+  </ul>
+
+  <a id="clear-people">Clear</a>
+</template>
+
