@@ -10,3 +10,5 @@ aldeed:collection2
 aldeed:autoform
 accounts-password
 accounts-ui
+aldeed:simple-schema
+todda00:friendly-slugs
